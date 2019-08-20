@@ -1,4 +1,4 @@
-import { IUser } from '@entities';
+import { IUser } from 'src/entities/User';
 
 export interface IUserDao {
     getAll: () => Promise<IUser[]>;

@@ -1,16 +1,27 @@
-interface IServer {
-    url: string,
-    port: number
+export interface IServer {
+    url: string;
 }
 
-const preVentaServer: IServer = {
-    url: 'http://localhost',
-    port: 3000
+export const preVentaServer: IServer = {
+    url: 'http://preventaservice.test:8000',
 };
 
-const joaquin: IServer = {
-    url: 'http://authService.test',
-    port: 8000
-}
+export const controlesServer: IServer = {
+    url: 'http://controles.test',
+};
 
-export { preVentaServer, joaquin, IServer };
+export const usuariosServer: IServer = {
+    url: 'http://usuarios.test',
+};
+
+export const administracionServer: IServer = {
+    url: 'http://administracion.test'
+};
+
+export const logisticaServer: IServer = {
+    url: 'http://logistica.test'
+};
+
+export const liquidacionServer: IServer = {
+    url: 'http://liquidacion.test'
+};

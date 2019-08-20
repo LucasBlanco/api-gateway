@@ -1,0 +1,1 @@
+{"version":3,"file":"preVenta.js","sourceRoot":"","sources":["../../../src/entities/preVenta.ts"],"names":[],"mappings":";;AAQa,QAAA,WAAW,GAAG,CAAC,QAAqB,EAAgB,EAAE;IAC/D,OAAO;QACH,IAAI,EAAE,QAAQ,CAAC,IAAI;KACtB,CAAC;AACN,CAAC,CAAC;AAEW,QAAA,UAAU,GAAG,CAAC,QAAsB,EAAe,EAAE;IAC9D,OAAO;QACH,IAAI,EAAE,QAAQ,CAAC,IAAI;KACtB,CAAC;AACN,CAAC,CAAC"}

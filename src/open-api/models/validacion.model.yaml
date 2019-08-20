@@ -1,0 +1,14 @@
+components:
+  schemas:
+    Validacion:
+      type: object
+      properties:
+        id: 
+          type: integer
+          example: 4
+        nombre:
+          type: string
+          example: Lucas Blanco
+        cuit:
+          type: string
+          example: 20-39268594-5

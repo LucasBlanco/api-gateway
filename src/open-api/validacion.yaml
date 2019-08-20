@@ -1,0 +1,66 @@
+
+openapi: 3.0.0
+info:
+  title: 'ApiGateway'
+  version: 1.0.0
+servers:
+  - url: 'http://apigatewayVentas.com'
+    description: 'Prod server'
+  - url: 'http://localhost:3000'
+    description: 'Dev server'
+paths: 
+  /prueba/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+          example: 1
+    get:
+      description: Obtener informacion de una validacion
+      responses:
+        '200':
+          description: Informacion de la validacion obtenida
+          content:
+            application/json:
+              schema:
+                type: integer
+                example: 1    
+
+  /prueba:
+    get:
+      description: Obtiene las ventas validadas
+      responses:
+        200:
+          description: Exito al traer las ventas validadas
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Validacion'
+    post: 
+      description: Crear una nueva validacion
+      requestBody:
+        required: true
+        content:
+         application/json:
+              schema:
+                $ref: '#/components/schemas/Validacion'     
+      responses:
+        200:
+          description: Exito al crear una validacion
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Validacion'  
+
+components:
+  schemas:
+    Validacion:
+      $ref: './models/validacion.model.yaml#/components/schemas/Validacion'       
+
+  
+  
+

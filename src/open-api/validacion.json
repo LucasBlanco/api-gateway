@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Validacion",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000",
+            "description": "Dev Server"
+        },
+        {
+            "url": "http://gateWayVentas.com",
+            "description": "Prod Server"
+        }
+    ],
+    "paths": {
+        "/venta/ventasAValidar": {
+            "get": {
+                "description": "Obtiene ventas a validar",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Exito al obtener las ventas a validar",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer",
+                                                "example": 1
+                                            },
+                                            "nombre": {
+                                                "type": "string",
+                                                "example": "Lucas Blanco"
+                                            },
+                                            "cuil": {
+                                                "type": "string",
+                                                "example": "20-39268594-5"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

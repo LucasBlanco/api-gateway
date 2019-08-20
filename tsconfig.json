@@ -19,6 +19,9 @@
       "@entities": [
         "src/entities"
       ],
+      "@servers": [
+        "src/routes/serverRoutes.ts"
+      ],
       "@shared": [
         "src/shared"
       ],

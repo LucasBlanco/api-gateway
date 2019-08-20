@@ -12,7 +12,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(cookie_parser_1.default());
 app.use(express_1.default.static(path_1.default.join(__dirname, 'public')));
-app.use('/api', routes_1.default);
+app.use('/', routes_1.default);
 const viewsDir = path_1.default.join(__dirname, 'views');
 app.set('views', viewsDir);
 const staticDir = path_1.default.join(__dirname, 'public');
