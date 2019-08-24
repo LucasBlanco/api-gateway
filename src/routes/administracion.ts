@@ -1,6 +1,6 @@
 
-import { administracionServer } from './serverRoutes';
-import { createRequestHandler } from './requestHelper';
+import { administracionServer } from '@servers';
+import { createRequestHandler } from '@shared';
 
 // Init shared
 

@@ -9,4 +9,3 @@ function mapToOutput(auditoria) {
     return Object.assign({}, auditoria, { capitas: auditoria.capitas === 99 ? null : auditoria.capitas, datosEmpresa: empresa_1.mapToOutput(auditoria.datosEmpresa) });
 }
 exports.mapToOutput = mapToOutput;
-//# sourceMappingURL=auditoria.js.map

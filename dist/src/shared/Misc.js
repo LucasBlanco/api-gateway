@@ -10,4 +10,3 @@ exports.pErr = (err) => {
 exports.getRandomInt = () => {
     return Math.floor(Math.random() * 1000000000000);
 };
-//# sourceMappingURL=Misc.js.map

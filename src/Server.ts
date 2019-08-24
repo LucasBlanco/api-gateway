@@ -28,7 +28,8 @@ app.set('views', viewsDir);
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
 app.get('*', (req: Request, res: Response) => {
-    res.sendFile('index.html', { root: viewsDir });
+    res.sendStatus(404);        // HTTP status 404: NotFound
+    // res.sendFile('index.html', { root: viewsDir });
 });
 
 // Export express instance

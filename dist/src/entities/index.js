@@ -14,4 +14,3 @@ exports.mapEmpresaOut = empresa_1.mapToOutput;
 var preVenta_1 = require("./preVenta");
 exports.mapVentaIn = preVenta_1.mapToInput;
 exports.mapVentaOut = preVenta_1.mapToOutput;
-//# sourceMappingURL=index.js.map

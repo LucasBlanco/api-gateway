@@ -17,11 +17,12 @@ export interface IEmpresaOut {
 }
 
 export function mapToInput(empresa: IEmpresaOut): IEmpresaIn {
-   const {razon_social, ...datosEmpresa} = empresa;
-   return { empresa: razon_social, ...datosEmpresa}
+    const { razon_social, ...datosEmpresa } = empresa;
+    return { empresa: razon_social, ...datosEmpresa };
+
 }
 
 export function mapToOutput(_empresa: IEmpresaIn): IEmpresaOut {
-    const {empresa, ...datosEmpresa} = _empresa;
-    return {...datosEmpresa, razon_social: empresa}
+    const { empresa, ...datosEmpresa } = _empresa;
+    return { ...datosEmpresa, razon_social: empresa };
 }

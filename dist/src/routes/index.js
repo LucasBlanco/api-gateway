@@ -2,8 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
+const preVentas_1 = tslib_1.__importDefault(require("./preVentas"));
 const controles_1 = tslib_1.__importDefault(require("./controles"));
+const usuarios_1 = tslib_1.__importDefault(require("./usuarios"));
+const administracion_1 = tslib_1.__importDefault(require("./administracion"));
+const liquidacion_1 = tslib_1.__importDefault(require("./liquidacion"));
+const logistica_1 = tslib_1.__importDefault(require("./logistica"));
+const testRequestHelperServer_1 = tslib_1.__importDefault(require("spec/testRequestHelperServer"));
 const router = express_1.Router();
 router.use('/', controles_1.default);
+router.use('/', preVentas_1.default);
+router.use('/', usuarios_1.default);
+router.use('/', administracion_1.default);
+router.use('/', liquidacion_1.default);
+router.use('/', logistica_1.default);
+router.use('/', testRequestHelperServer_1.default);
 exports.default = router;
-//# sourceMappingURL=index.js.map

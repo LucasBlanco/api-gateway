@@ -1,11 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const preVentaServer = {
-    url: 'http://localhost:3000',
+exports.preVentaServer = {
+    url: 'http://preventaservice.test:8000',
 };
-exports.preVentaServer = preVentaServer;
-const controlesServer = {
-    url: 'http://localhost:3000',
+exports.controlesServer = {
+    url: 'http://controles.test',
 };
-exports.controlesServer = controlesServer;
-//# sourceMappingURL=serverRoutes.js.map
+exports.usuariosServer = {
+    url: 'http://usuarios.test',
+};
+exports.administracionServer = {
+    url: 'http://administracion.test'
+};
+exports.logisticaServer = {
+    url: 'http://logistica.test'
+};
+exports.liquidacionServer = {
+    url: 'http://liquidacion.test'
+};

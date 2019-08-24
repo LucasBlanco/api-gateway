@@ -70,4 +70,3 @@ router.delete('/delete/:id', (req, res) => tslib_1.__awaiter(this, void 0, void 
     }
 }));
 exports.default = router;
-//# sourceMappingURL=Users.js.map

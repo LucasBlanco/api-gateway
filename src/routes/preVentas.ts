@@ -1,6 +1,6 @@
 
-import { createRequestHandler, map } from './requestHelper';
-import { preVentaServer } from './serverRoutes';
+import { createRequestHandler } from '@shared';
+import { preVentaServer } from '@servers';
 import { mapVentaIn } from '@entities';
 
 const { router, emit, receive } = createRequestHandler(preVentaServer);

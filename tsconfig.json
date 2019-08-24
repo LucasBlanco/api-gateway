@@ -7,10 +7,11 @@
     "importHelpers": true,
     "module": "commonjs",
     "outDir": "dist",
+    "noImplicitAny": false,
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es6",
+    "target": "ES6",
     "moduleResolution": "node",
     "paths": {
       "@daos": [

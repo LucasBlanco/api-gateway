@@ -1,6 +1,6 @@
 
-import { logisticaServer } from './serverRoutes';
-import { createRequestHandler } from './requestHelper';
+import { logisticaServer } from '@servers';
+import { createRequestHandler } from '@shared';
 
 // Init shared
 

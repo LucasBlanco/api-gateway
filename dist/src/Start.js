@@ -7,4 +7,3 @@ const port = Number(process.env.PORT || 3000);
 _server_1.default.listen(port, () => {
     _shared_1.logger.info('Express server started on port: ' + port);
 });
-//# sourceMappingURL=Start.js.map

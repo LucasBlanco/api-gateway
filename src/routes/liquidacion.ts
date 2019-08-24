@@ -1,6 +1,6 @@
 
-import { liquidacionServer } from './serverRoutes';
-import { createRequestHandler } from './requestHelper';
+import { liquidacionServer } from '@servers';
+import { createRequestHandler } from '@shared';
 
 // Init shared
 

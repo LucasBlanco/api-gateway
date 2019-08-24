@@ -10,4 +10,3 @@ exports.mapToInput = (preVenta) => {
         chau: preVenta.hola,
     };
 };
-//# sourceMappingURL=preVenta.js.map

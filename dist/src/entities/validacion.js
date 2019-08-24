@@ -9,4 +9,3 @@ function mapToOutput(validacion) {
     return Object.assign({}, validacion, { capitas: validacion.capitas === 99 ? null : validacion.capitas, super: validacion.superr, datosEmpresa: empresa_1.mapToOutput(validacion.datosEmpresa) });
 }
 exports.mapToOutput = mapToOutput;
-//# sourceMappingURL=validacion.js.map
